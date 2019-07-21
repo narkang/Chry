@@ -535,5 +535,3 @@ public Object invoke(Object proxy, Method method, Object[] args) {
 
 源码分析到了这里总结下先会去执行服务器注册对象的getInstance方法，然后将返回对象保存在全局map中，接着客户端在调用接口方法时候会去代理对象中执行服务器的method，客户端就可以获取到执行结果。这样一来对于用户来说就是无感知的，就像调用同一进程方法，获取到服务端方法执行结果。
 
-[源码地址](https://github.com/narkang/Chry)
-
